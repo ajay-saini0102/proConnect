@@ -1,0 +1,72 @@
+
+### create a new user requset
+POST http://localhost:3030/register 
+Content-Type: application/json
+
+{
+  "username" : "priya123",
+  "password": "priya",
+  "email": "priya123@gmail.com",
+  "name": "priya"
+}
+
+
+
+###  login request 
+POST http://localhost:3030/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "priya123@gmail.com",
+  "password": "priya"
+}
+
+### ajay's profile request
+GET http://localhost:3030/get_user_and_profile HTTP/1.1
+Content-Type: application/json
+
+{
+"token":"d6159a758fae147bc9e9a660974da76472eb80db8d63a97608365b86a7f760d4"
+}
+
+### priya's profile request
+GET http://localhost:3030/get_user_and_profile HTTP/1.1
+Content-Type: application/json
+
+{
+"token":"fef6041f16553f014dc4baf0394a0b7cc5abd3789b05ef4e66280faeec6951ac"
+}
+
+
+
+###
+POST http://localhost:3030/update_profile_data 
+Content-Type: application/json
+
+{
+"token":"e37e47356ef7015ac4eafc7881ea1cfcdd267acbe5b3312c50d90bf6c321bd98",
+"bio" : " hey its mario",
+"currentPost" : "Manager",
+"pastWork" : [
+  {
+    "company": "infosys",
+    "position" : "Manager",
+    "years" : "3+"
+  }
+],
+"education": [
+  {
+    "school": "IIT",
+    "degree": "B.Tech",
+    "fieldOfStudy" : "2016-2020"
+  }
+]
+}
+
+### get all users
+GET http://localhost:3030/user/get_all_profiles HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:3030/get_all_post HTTP/1.1
+Content-Type: application/json
