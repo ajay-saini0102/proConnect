@@ -7,7 +7,6 @@ import {
   incrementPostLike,
   postComment,
 } from "@/config/redux/action/postAction";
-import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import UserLayout from "../layout/UserLayout";
@@ -16,8 +15,7 @@ import styles from "./style.module.css";
 import { BASE_URL } from "@/config";
 import { resetPostId } from "@/config/redux/reducer/postReducer";
 
-function dashboard() {
-  const router = useRouter();
+function Dashboard() {
   const dispatch = useDispatch();
   const authState = useSelector((state) => state.auth);
 

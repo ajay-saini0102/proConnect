@@ -2,7 +2,17 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/api/hello": "pages/api/hello.js",
+  "/api/text": "pages/api/text.js",
+  "/blog": "pages/blog.js",
+  "/dashboard": "pages/dashboard.js",
+  "/discover": "pages/discover.js",
   "/": "pages/index.js",
+  "/layout/DashboardLayout": "pages/layout/DashboardLayout.js",
+  "/layout/UserLayout": "pages/layout/UserLayout.js",
   "/login": "pages/login.js",
-  "/dashboard": "pages/dashboard.js"
+  "/messages": "pages/messages.js",
+  "/my_connection": "pages/my_connection.js",
+  "/profile": "pages/profile.js",
+  "/view_profile/[username]": "pages/view_profile/[username].js"
 }
